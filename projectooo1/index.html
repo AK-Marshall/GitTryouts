@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Association OG | Cocktails & Parties - Irinjalakuda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* [Same CSS as before] */
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header { /* unchanged */ }
+    header h1 { /* unchanged */ }
+    nav a { /* unchanged */ }
+    nav a:hover { /* unchanged */ }
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1598737725517-9e1cfca1ef6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h2 { /* unchanged */ }
+    .hero p { /* unchanged */ }
+    section { /* unchanged */ }
+    .about, .events, .contact {
+      text-align: center;
+    }
+    .about h3, .events h3, .contact h3 { /* unchanged */ }
+    .about p, .events p, .contact p { /* unchanged */ }
+    footer { /* unchanged */ }
+    .btn { /* unchanged */ }
+    .btn:hover { /* unchanged */ }
+    form { /* unchanged */ }
+    form input, form textarea { /* unchanged */ }
+    form button { /* unchanged */ }
+    form button:hover { /* unchanged */ }
+    @media (max-width: 768px) { /* unchanged */ }
+    
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-energy.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<header>
+  <h1>Association OG</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Where Vice City Meets Irinjalakuda</h2>
+  <p>Specialized Cocktails. Legendary Nights. Nonstop Raves. Every week, only at Association OG.</p>
+  <a href="#events" class="btn">Explore Events</a>
+</section>
+
+<section id="about" class="about">
+  <h3>About Us</h3>
+  <p>Born from the neon dreams of Vice City and the underground rave culture, Association OG crafts unforgettable nights in the heart of Irinjalakuda. Our mixologists create cocktail masterpieces while DJs set the vibe ablaze every weekend.</p>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1602960786743-2c83fa196f99?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Party">
+    <img src="https://images.unsplash.com/photo-1598133894005-bf4f8cf93f09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Tropical Vibe">
+    <img src="https://images.unsplash.com/photo-1608879749418-cd8dc7c3f6f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Dance Floor">
+  </div>
+</section>
+
+<section id="events" class="events">
+  <h3>Upcoming Events</h3>
+  <p>Thursdays - Neon Nights 🌴 | Fridays - OG Raves 🚀 | Saturdays - Tropical Vice 🌺</p>
+  <a href="#contact" class="btn">Book Your Night</a>
+</section>
+
+<section id="contact" class="contact">
+  <h3>Contact Us</h3>
+  <p>Ready to experience the OG way? Reach out to reserve your VIP night or host private events with us.</p>
+  <p>Email: <a href="mailto:info@associationog.com" style="color: #00ffe0;">info@associationog.com</a></p>
+  <p>Location: Downtown Irinjalakuda</p>
+
+  <form>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Association OG. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
